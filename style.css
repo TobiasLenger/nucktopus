@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: linear-gradient( 94.3deg,  #1b2241 10.9%, #515473 87.1% );
+    height: 600px;
+    background-size: 400% 400%;
+    animation: bg-animation 15s ease infinite;
+}
+#nav {
+    width: 100%;
+    height: 64px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#logo {
+    width: 70px;
+    pointer-events: none;
+}
+#con1 {
+    width: 85%;
+    margin: auto;
+    margin-top: 100px;
+}
+#con1 h1 {
+    color: white;
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    pointer-events: none;
+}
+#con1 h1 span {
+    color: black;
+    background-color: white;
+    padding: 1.2px;
+}
+
+::-moz-selection {
+    color: black;
+    background: white;
+  }
+  
+  ::selection {
+    color: black;
+    background: white;
+  }
+
+@keyframes bg-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
